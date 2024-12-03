@@ -1,0 +1,142 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #5ddfbd, #e3ff55); /* Gradient colors */
+  color: #333;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Header styles */
+.header {
+ 
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Main content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Login container */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* User details */
+.user-details {
+  text-align: center;
+}
+
+.user-details h2 {
+  font-size: 1.5rem;
+}
+
+.user-details p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.logout-button {
+  background-color: #db4437;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background-color: #c1351d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  button,
+  .logout-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  button,
+  .logout-button {
+    padding: 10px 15px;
+  }
+}
